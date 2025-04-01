@@ -38,3 +38,8 @@
    - 
 - Workflow automation
 - Summarize / Research Helpers
+
+# Alternates
+
+- llamaindex
+- haystack
