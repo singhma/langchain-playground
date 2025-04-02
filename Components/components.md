@@ -55,5 +55,20 @@
     - Retrievers
       
 - Memory
-
+  - LLM API calls are stateless
+  - Type of Memory
+    - Conversation Buffer Memory
+      - Store a transcript of recent message. Great for short chats but can grow large quickly
+    - Conversation Buffer Window Memory
+      - only keeps last N interactions to avoid excessive token usage
+    - Summarizer based Memory
+      - periodically summarizes older chat segments to keep a condensed memory footprint, that is we sent summary to api call
+    - Custom Memory
+      - For advanced use cases, you can store specialised state (eg user preference or key facts) in a custom memory class
+     
+        
 - Agents
+  - helps in building AI Agents
+  - allows to perform some task (other then understanding NLU + text generation)
+  - has reasoning capabilities
+  - tool access
