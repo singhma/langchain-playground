@@ -45,6 +45,15 @@
       - input --> llm --> transalation --> another llm --> summarise in other language
       - if chains are not used, you will have to take care of outputs of every stage and then use that as input for next stage (chains take care of this out of box)
       - can handle complex pipeline like parallel chains, sequential chains, conditional
-- Memory
+
 - Indexes
+  - Connects your application to external sources such as pdf, websites or databases
+  - what makes indexes
+    - Document Loader
+    - Text Splitter
+    - Vector Store
+    - Retrievers
+      
+- Memory
+
 - Agents
