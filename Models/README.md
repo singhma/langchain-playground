@@ -29,6 +29,32 @@
       | **Input Format**       | Accepts plain text as input.                                                                                             | Accepts structured inputs (e.g., a sequence of messages with roles like "user" and "assistant").                                          |
       | **Summary**            | Broader in scope, designed for general-purpose text processing.                                                          | Specialized versions of LLMs, fine-tuned and optimized for conversational tasks.                                                          |
 
+    #### Open vs Closed source Model
+
+    - Cost
+      - Free to use i.e. no api cost
+    - Control
+      - can modify, fine tune and deploy the model anywhere as opposed to be locked to provider infrastructure
+    - Data Privacy
+      - run locally, no need to send queries to providers servers
+    - Customisation
+      - can be find tune on specific datasets
+    - Deployment
+      - can be done on prem or on cloude
+     
+    `Hugging face is a goto place to find any open source models`
+
+    #### How to use open source models
+    - Locally
+    - Using HF Infrence API ( free tier for certain limits) giving you access to thousands of models
+   
+    #### Disadvantages of using open source model
+    - requires high hardware requirements for running large llm
+    - requires dependencies like pytorch, cuda and transformers making setup little complicated
+    - Lack of RHLF: most of the open source models dont have fine-tuning with human feedback making them weaker in instruction following
+    - limited multimodal abilities
+    
+
 - Embedding Model
   - input as text --> output is series of numbers knowns as embeddings (vector) representing contextual meaning of the text
   - use case like semantic search and helpful in building RAG based applications
