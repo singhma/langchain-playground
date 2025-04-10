@@ -11,6 +11,8 @@
       - what keys are required and what type of values they should have
       - does not validate data at run time... in shorty type hints
     - pydantic
+      - data validation and data parsing library for python
+      - ensure data you work with is correct, structured and type safe
     - json_schema
 - and some llms dont have this capability
   - use output parsers
